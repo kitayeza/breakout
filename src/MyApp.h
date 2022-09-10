@@ -24,7 +24,7 @@ private:
     std::shared_ptr<PlatformGo> mPlatform;
     std::shared_ptr<BallGo> mBall;
     Shader simpleShader = Shader("../assets/simple.vert", "../assets/simple.frag");
-    Shader roundShader = Shader("../assets/simple.vert", "../assets/simple.frag");
+    Shader roundShader = Shader("../assets/simple.vert", "../assets/round.frag");
 
     const int padding_x = 65;
     const int padding_y = 50;
