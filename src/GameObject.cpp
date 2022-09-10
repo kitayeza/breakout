@@ -1,6 +1,7 @@
 #include "GameObject.h"
+#include "MyApp.h"
 
-GameObject::GameObject(MyApp *a, Renderable r)
+GameObject::GameObject(MyApp *a, Renderable r) : app(a), renderer(&a->GetRenderer()), renderable(r)
 {
     transform.size = glm::vec2(r.width, r.height);
 }

@@ -15,7 +15,7 @@ add_subdirectory(lib/glfw)
 add_subdirectory(lib/glew)
 add_subdirectory(lib/glm)
 
-add_executable(breakout ${SOURCES} src/Renderer.h src/Renderer.cpp src/utils.h src/Shader.h src/Shader.cpp src/GameObject.h src/GameObject.cpp)
+add_executable(breakout ${SOURCES} src/Renderer.h src/Renderer.cpp src/utils.h src/Shader.h src/Shader.cpp src/GameObject.h src/GameObject.cpp src/MyApp.h src/Application.h src/Application.cpp src/MyApp.cpp src/BrickGo.cpp src/BrickGo.h src/BallGo.cpp src/BallGo.h src/PlatformGo.cpp src/PlatformGo.h)
 
 # find_package(OpenGL REQUIRED)
 

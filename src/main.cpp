@@ -1,6 +1,12 @@
 #include <iostream>
+#include "MyApp.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+
+    auto app = MyApp("Breakout", 800, 600);
+    if (!app.IsInitialized()) {
+        return -1;
+    }
+
+    app.Run();
 }

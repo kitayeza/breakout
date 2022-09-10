@@ -53,9 +53,11 @@ static std::unique_ptr<char[]> readFile(const char* fileName)
 
     std::ifstream file;
 
+    file.open(fileName, std::ios::binary);
+
     if(!file.is_open())
     {
-        std::cout << "Cant open file " << fileName << '\n';
+        std::cout << "Cannot open file " << fileName << '\n';
         exit(1);
     }
 
@@ -65,9 +67,10 @@ static std::unique_ptr<char[]> readFile(const char* fileName)
 
     std::unique_ptr<char[]> buffer{ new char[length + 1]};
     file.read(buffer.get(), length);
+    buffer[length] = '\0';
+
     file.close();
 
-    buffer[length] = '\0';
     return buffer;
 
 }
