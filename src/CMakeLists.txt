@@ -7,6 +7,16 @@ list(APPEND SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/Renderer.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/GameObject.h
     ${CMAKE_CURRENT_SOURCE_DIR}/GameObject.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/BrickGo.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/BrickGo.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/PlatformGo.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/PlatformGo.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/BallGo.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/BallGo.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/Application.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/Application.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/MyApp.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/MyApp.cpp
 )
 
 set(SOURCES ${SOURCES} PARENT_SCOPE)
